@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
     font-family: 'Roboto', sans-serif;
 }
 body{
@@ -24,7 +24,8 @@ body{
     z-index: 999;
     background: #fff;
     box-shadow: 0 5px 25px rgb(0 0 0 / 15%);
-    width: 400px;
+    height:450px;
+    width: 290px;
     padding: 30px 40px;
     border-radius: .5rem;
     overflow: hidden;
@@ -155,6 +156,7 @@ body{
     box-shadow: 0 5px 25px rgb(0 0 0 / 15%);
     height: 400px;
     padding: 15px 35px;
+    width: 270px;
 }
 .sign-in-imgBox{
     border-radius: 0 5px 5px 0;
@@ -194,4 +196,28 @@ body{
     transform: translateX(0);
     visibility: visible;
     transition: 1.5s ease;
+}
+
+/************************PARTIE RESPONSIVE AJOUTE DE MEDIA QUERY**************************/
+@media screen  and (max-width: 735px){
+    .form-container{
+        flex-direction: column;
+        top:0;
+        overflow:hidden;
+        padding:30px;
+    }
+    .imgBox {
+        box-shadow: none;
+        width: 100%;
+        height: auto;
+        padding: 35px 35px 15px;
+    }
+    .form-box{
+        padding: 0;
+        box-shadow: none;
+    }
+    .imgBox img{
+        max-width: 50%;
+        min-width: 180px;
+    }
 }
