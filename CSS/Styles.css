@@ -220,4 +220,32 @@ body{
         max-width: 50%;
         min-width: 180px;
     }
+    .sign-up-form{
+        flex-direction: column-reverse;
+    }
+    
+}
+@media screen and (max-width:450px) {
+    .form-container{
+        font-size: .9rem;
+    }
+    .form-box{
+        width: 100%;
+    }
+    .other-logins a {
+        padding: 3px 10px;
+        border-radius: 5px;
+    }    
+}
+@media screen and (max-width: 325px){
+    .other-logins a {
+        padding: 3px 10px;
+        border-radius: 5px;
+    }
+    .sliding-link span {
+        color: #0065ff;
+        font-weight: 600;
+        margin-left: 1px;
+        cursor: pointer;
+    }
 }
