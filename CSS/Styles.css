@@ -1,0 +1,167 @@
+/*********************************************CSS FILD*************************************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+.form-box{
+    z-index: 999;
+    background: #fff;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 15%);
+    width: 400px;
+    padding: 30px 40px;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.form-box h2{
+    font-size: 2em;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+.form-box .field{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 25px;
+}
+.form-box .field.active{
+    border-bottom: 2px solid #0065ff;
+    transition: .5s ease;
+}
+.form-box .field input{
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    font-size: 1em;
+    padding-bottom: 5px;
+}
+.form-box .field i{
+    color: #101111;
+    font-size: 1.3em;
+    margin-right: 10px;
+    padding-bottom: 5px;
+
+}
+.form-box .field.active i{
+    color:  #0065ff;
+    transition: .5s ease;
+}
+::placeholder{
+    color: #828da0;
+    font-size: 0.85em;
+}
+.eye-btn{
+    cursor: pointer;
+}
+.form-box .field .eye-btn i:hover{
+    color: #0065ff;
+    transition: .5s ease;
+}
+.forgot-link{
+    text-align: right;
+    transform: translateY(-10px);
+}
+.forgot-link a{
+    color: #0065ff;
+    font-size: 1rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.sumbit-btn{
+    background: #0065ff;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    width: 120px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: .8rem;
+    cursor: pointer;
+}
+.login-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.login-options .text{
+    color: #4a4e55;
+    font-size: 1rem;
+    margin: 25px 0;
+}
+.other-logins{
+    display: flex;
+}
+.other-logins a{
+    border: 1px solid #ccc;
+    padding: 11px 20px;
+    border-radius:12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 5px;
+    transition: border .5s ease;
+}
+.other-logins a:hover{
+    border: .1rem solid #0065ff;
+}
+.other-logins a img{
+    width: 30px;
+}
+
+.imgBox img{
+    max-width: 270px;
+}
+.sliding-link{
+    display: flex;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+.sliding-link span{
+    color: #0065ff;
+    font-weight: 600;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.imgBox{
+    z-index: 888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 15%);
+    height: 400px;
+    padding: 15px 35px;
+}
+.sign-up-form{
+    display: none;
+}
+.sign-in-imgBox{
+    border-radius: 0 5px 5px 0;
+}
+.sign-up-imgBox{
+    border-radius: 5px 0 0 5px;
+}

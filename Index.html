@@ -4,13 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login-Sugnup</title>
-    <!--Link icon-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
+    <title>Responsive Login-Sugnup , HTML CSS AND JS</title>
+    <!--*********************************************LINK*************************************-->
+    <!--***********************************LINK ICON******************************************-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--*********************************LINK STYLE CSS***************************************-->
+    <link rel="stylesheet" href="CSS/Styles.css">
 </head>
 <body>
-    <i class="uil uil-at"></i>
-    <i class="uil uil-eye-slash"></i>
-    <i class="uil uil-lock-alt"></i>
+
+    <!--*****************************************LOGIN PART**********************************-->
+    <div class="form-container sign-in-form">
+        <div class="form-box sign-in-box">
+            <h2>Login</h2>
+            <form action="">
+                <div class="field">
+                    <i class="uil uil-at"></i>
+                    <input type="email" placeholder="E-mail ID" required>
+                </div>
+                <div class="field">
+                    <i class="uil uil-lock-alt"></i>
+                    <input class="password-input" type="password" placeholder="Password" required>
+                    <div class="eye-btn"><i class="uil uil-eye-slash"></i></div>
+                </div>
+                <div class="forgot-link">
+                    <a href="">Forgot password ?</a>
+                </div>
+                <input class="sumbit-btn" type="submit" value="Login">
+            </form>
+
+            <div class="login-options">
+                <p class="text">Or login with....</p>
+                <div class="other-logins">
+                    <a href=""><img src="Images/google.png" alt=""></a>
+                    <a href=""><img src="Images/facebook.png" alt=""></a>
+                    <a href=""><img src="Images/appl.png" alt=""></a>
+                    <a href=""><img src="Images/github.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="imgBox sign-in-imgBox">
+            <div class="sliding-link">
+                <p>Don't have an account ?</p>
+                <span class="sign-up-btn">Sign up</span>
+            </div>
+            <img src="Images/accessa.svg" alt="">
+        </div>
+    </div>
+
+    <!--*****************************************LOGIN PART**********************************-->
+    <div class="form-container sign-up-form">
+        <div class="imgBox sign-up-imgBox">
+            <div class="sliding-link">
+                <p>Already an account ?</p>
+                <span class="sign-up-btn">Sign in</span>
+            </div>
+            <img src="Images/accessd.svg" alt="">
+        </div>
+        <div class="form-box sign-up-box">
+            <h2>Sign up</h2>
+            <form action="">
+                <div class="field">
+                    <i class="uil uil-envelope"></i>
+                    <input type="email" placeholder="E-mail ID" required>
+                </div>
+                <div class="field">
+                    <i class="uil uil-user-square"></i>
+                    <input type="text" placeholder="Full name" required>
+                </div>
+                <div class="field">
+                    <i class="uil uil-lock-alt"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="field">
+                    <i class="uil uil-lock-access"></i>
+                    <input type="password" placeholder="Confirm password" required>
+                </div>
+                <input class="sumbit-btn" type="submit" value="Sign up">
+            </form>
+            <div class="login-options">
+                <p class="text">Or sign up with email....</p>
+                <div class="other-logins">
+                    <a href=""><img src="Images/google.png" alt=""></a>
+                    <a href=""><img src="Images/facebook.png" alt=""></a>
+                    <a href=""><img src="Images/appl.png" alt=""></a>
+                    <a href=""><img src="Images/github.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="JS/Index.js"></script>
 </body>
 </html>
