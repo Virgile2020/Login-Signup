@@ -1,7 +1,6 @@
 /*************************************CODE JS*********************************************/
 /*************************************EFFET SUR LE CHAMPS INPUT***************************/
 const textInputs = document.querySelectorAll('input');
-
 textInputs.forEach(textInput =>{
     textInput.addEventListener("focus", ()=>{
         let parent = textInput.parentNode;
@@ -27,3 +26,19 @@ eyeBtn.addEventListener("click", ()=>{
     }
 })
 
+/****************************PERMUTION ENTRE SIGN IN ET SIGN UP*************************/
+const signUpBtn = document.querySelector(".sign-up-btn");
+const signInBtn = document.querySelector(".sign-in-btn");
+const signUpForm = document.querySelector(".sign-up-form");
+const signInForm = document.querySelector(".sign-in-form");
+
+signUpBtn.addEventListener("click", ()=>{
+    signInForm.classList.add("hide");
+    signUpForm.classList.add("show");
+    signInForm.classList.remove("show")
+})
+signInBtn.addEventListener("click", ()=>{
+    signInForm.classList.remove("hide");
+    signUpForm.classList.remove("show")
+    signInForm.classList.add("show")
+})

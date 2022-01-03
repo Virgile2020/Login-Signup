@@ -156,12 +156,42 @@ body{
     height: 400px;
     padding: 15px 35px;
 }
-.sign-up-form{
-    display: none;
-}
 .sign-in-imgBox{
     border-radius: 0 5px 5px 0;
 }
 .sign-up-imgBox{
     border-radius: 5px 0 0 5px;
+}
+
+.sign-in-form.hide .sign-in-box{
+    transform: translateX(100%);
+    visibility: hidden;
+}
+
+.sign-in-form.hide .sign-in-imgBox{
+    transform: translateX(-100%);
+    visibility: hidden;
+}
+
+.sign-in-form.show .sign-in-box,
+.sign-in-form.show .sign-in-imgBox{
+    transform: translateX(0);
+    visibility: visible;
+    transition: 1.5s ease;
+}
+
+.sign-up-form .sign-up-imgBox{
+    transform: translateX(100%);
+    visibility: hidden;
+}
+
+.sign-up-form .sign-up-box{
+    transform: translateX(-100%);
+    visibility: hidden;
+}
+.sign-up-form.show .sign-up-imgBox,
+.sign-up-form.show .sign-up-box{
+    transform: translateX(0);
+    visibility: visible;
+    transition: 1.5s ease;
 }
